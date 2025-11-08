@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>60 ANOS OBJETIVO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #73B2BF;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      color: #FDFF63;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0 10px 0;
+      font-size: 2em;
+    }
+
+    /* === CONTAINER GERAL === */
+    .container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    /* === ÍNDICE DE NAVEGAÇÃO === */
+    .indice {
+      width: 230px;
+      background-color: #22A1BA;
+      margin: 30px 10px 0 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+    }
+
+    .indice h3 {
+      color: #FDFF63;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      text-align: center;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+
+    .indice ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .indice li {
+      margin: 8px 0;
+    }
+
+    .indice a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      display: block;
+      text-align: left;
+      padding-left: 5px;
+      transition: 0.3s;
+    }
+
+    .indice a:hover {
+      color: #FDFF63;
+      text-decoration: underline;
+    }
+
+    /* Subníveis (para h4) */
+    .indice ul ul {
+      margin-left: 15px;
+      border-left: 2px solid rgba(255,255,255,0.3);
+      padding-left: 10px;
+    }
+
+    .indice ul ul a {
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+
+    /* === CONTEÚDO PRINCIPAL === */
+    .conteudo {
+      flex: 1;
+      padding: 20px 40px;
+    }
+
+    .introducao {
+      background-color: rgba(34,161,186,0.4);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .introducao p {
+      font-size: 1.05em;
+      line-height: 1.6em;
+      color: white;
+      text-align: justify;
+    }
+
+    .subtitulo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 40px 0;
+      color: #FDFF63;
+    }
+
+    .texto {
+      width: 55%;
+      text-align: justify;
+    }
+
+    .texto h3, .texto h4 {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .texto h4 {
+      color: #FDFF63;
+      font-size: 1.3em;
+    }
+
+    .texto p {
+      color: white;
+      font-size: 1em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    .imagem {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imagem img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    a {
+      color: #FDFF63;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+    }
+
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* === RODAPÉ === */
+    footer {
+      background-color: #22A1BA;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 60px;
+      text-align: justify;
+      border-top: 4px solid #FDFF63;
+    }
+
+    footer h2 {
+      color: #002147; /* Azul escuro */
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      max-width: 900px;
+      margin: 0 auto 10px auto;
+      line-height: 1.6em;
+      font-size: 1em;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .indice {
+        width: 90%;
+        margin: 20px auto;
+        position: static;
+      }
+
+      .subtitulo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .texto, .imagem {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div style="background-color:#22A1BA; padding:5px; text-align:center;">
+    <h1>Evolução da língua japonesa ao longo dos anos</h1>
+  </div>
+
+  <div class="container">
+
+    <nav class="indice">
+      <h3>Índice</h3>
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li>
+          <a href="#cultural">Aspectos culturais que influenciaram na língua</a>
+          <ul>
+            <li><a href="#valores">Valores sociais e tradições</a></li>
+            <li><a href="#etiqueta">Etiqueta e hierarquia na linguagem</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#guerras">Como as guerras influenciaram a língua</a>
+          <ul>
+            <li><a href="#vocabulário">Mudanças no vocabulário</a></li>
+            <li><a href="#influencia-ocidental">Influência ocidental pós-guerra</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#anime">Influência dos animes</a>
+          <ul>
+            <li><a href="#expressoes">Expressões populares</a></li>
+            <li><a href="#influencia">Influência internacional</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#tecnologia">Impacto da tecnologia</a>
+          <ul>
+            <li><a href="#neologismos">Neologismos digitais</a></li>
+            <li><a href="#emojis">Abreviações e Emojis</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="conteudo">
+
+      <div class="introducao" id="introducao">
+        <p>
+          A língua japonesa evoluiu de forma impressionante ao longo dos séculos, moldada pelas influências culturais, religiosas e tecnológicas que acompanharam o desenvolvimento do Japão. 
+          Desde suas origens ligadas à tradição oral até o surgimento de novas expressões impulsionadas pela globalização e pela internet, o idioma reflete a adaptação constante do povo japonês 
+          às mudanças sociais e culturais.
+        </p>
+      </div>
+
+      <div class="subtitulo" id="cultural">
+        <div class="texto">
+          <h3>Aspectos culturais que influenciaram na língua</h3>
+          <h4 id="valores">Valores sociais e tradições</h4>
+          <p>
+            A cultura japonesa desempenhou um papel fundamental na formação e transformação da língua. 
+            Elementos como a etiqueta, o respeito hierárquico e o apreço pela harmonia moldaram as formas de expressão e a estrutura da comunicação no Japão.
+          </p>
+          <p>
+            Termos e expressões ligados a valores sociais — como “<em>wa</em>” (harmonia) e “<em>giri</em>” (dever social) — mostram como o idioma reflete o modo de pensar e viver japonês.
+          </p>
+          <h4 id="etiqueta">Etiqueta e hierarquia na linguagem</h4>
+          <p>
+            A linguagem japonesa também é marcada por diferentes níveis de formalidade, conhecidos como <em>keigo</em>, que demonstram respeito de acordo com a posição social do interlocutor. 
+            Essa característica reflete a importância da harmonia e da consideração mútua na sociedade japonesa.
+          </p>
+        </div>
+        <div class="imagem">
+          <img src="imagens/cultura.jpg" alt="Cultura japonesa tradicional">
+          <a href="https://www.todamateria.com.br/cultura-japonesa/" target="_blank">PARA SABER MAIS CLIQUE AQUI</a>
+        </div>
+      </div>
+
+      <div class="subtitulo" id="guerras">
+        <div class="texto">
+          <h4>Como as guerras influenciaram a língua</h4>
+          <h4 id="vocabulário">Mudanças no vocabulário</h4>
+          <p>
+            Os períodos de guerra tiveram grande impacto na língua japonesa, tanto no vocabulário quanto na forma de comunicação. 
+            Durante e após os conflitos, o idioma incorporou palavras estrangeiras, especialmente do inglês, relacionadas à política, tecnologia e cultura ocidental.
+          </p>
+          <h4 id="influencia-ocidental">Influência ocidental pós-guerra</h4>
+          <p>
+            Após a Segunda Guerra Mundial, a presença americana no Japão contribuiu para a introdução de termos em inglês e mudanças culturais que influenciaram o cotidiano e a linguagem. 
+            Expressões modernas e gírias começaram a surgir, refletindo uma sociedade em transformação.
+          </p>
+        </div>
+        <div class="imagem">
+         <img src="imagens/guerra.jpg" alt="Japão durante a guerra">
+          <a href="https://mundoeducacao.uol.com.br/historiageral/segunda-guerra-mundial-na-Asia-no-pacifico.htm" target="_blank">PARA SABER MAIS CLIQUE AQUI</a>
+        </div>
+      </div>
+
+      <div class="subtitulo" id="anime">
+        <div class="texto">
+          <h3>Como os desenhos animados influenciaram na língua</h3>
+          <p id="expressoes">
+            A cultura dos desenhos animados japoneses, conhecidos como <em>anime</em>, teve um impacto profundo na língua moderna, especialmente entre os jovens.
+          </p>
+          <p>
+            <strong>Expressões Populares:</strong> Termos como “<em>kawaii</em>”, “<em>senpai</em>” e “<em>baka</em>” tornaram-se comuns até mesmo fora do Japão.
+          </p>
+          <p id="influencia">
+            <strong>Influência Internacional:</strong> O sucesso dos animes em outros países também fez com que termos japoneses fossem adotados em outras línguas.
+          </p>
+        </div>
+        <div class="imagem">
+          <img src="imagens/desenho.jpg" alt="Desenhos animados japoneses">
+          <a href="https://periodicos.unb.br/index.php/resafe/article/view/3958" target="_blank">PARA SABER MAIS CLIQUE AQUI</a>
+        </div>
+      </div>
+
+      <div class="subtitulo" id="tecnologia">
+        <div class="texto">
+          <h3>O impacto da tecnologia na língua japonesa</h3>
+          <p id="neologismos">
+            A modernização tecnológica influenciou fortemente a língua japonesa, introduzindo novas palavras e expressões relacionadas à internet, redes sociais e comunicação digital.
+          </p>
+          <p>
+            <strong>Neologismos Digitais:</strong> Termos como “<em>sumaho</em>” (smartphone) e “<em>meru</em>” (e-mail) mostram a adaptação de palavras estrangeiras para o uso cotidiano.
+          </p>
+          <p id="emojis">
+            <strong>Abreviações e Emojis:</strong> O uso de emojis e abreviações em mensagens instantâneas transformou a maneira como os japoneses expressam emoções na escrita digital.
+          </p>
+        </div>
+        <div class="imagem">
+          <img src="imagens/tecnologia.jpg" alt="Tecnologia e comunicação no Japão">
+          <a href="https://japan2you.com.br/blog/tecnologia-e-inovacao-no-japao" target="_blank">PARA SABER MAIS CLIQUE AQUI</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ====== RODAPÉ ====== -->
+  <footer>
+    <h2>Em comemoração aos 60 anos do Objetivo</h2>
+    <p>O Colégio Objetivo celebra seus 60 anos em 2025, destacando sua trajetória de tradição e inovação na educação. As comemorações incluem o lançamento de iniciativas como a plataforma de inteligência artificial e-Genio e eventos como painéis e seminários. A escola, que começou como um curso pré-vestibular e se expandiu para abranger todos os níveis de ensino, também celebra o reconhecimento como a marca mais lembrada em sistemas de ensino pelo quinto ano consecutivo, segundo pesquisa do Estadão.</p>
+    <p><strong>Destaques das comemorações</strong></p>
+    <p><strong>Inovações tecnológicas:</strong> Lançamento da plataforma e-Genio, desenvolvida com inteligência artificial, para consolidar a inovação no propósito educacional.</p>
+    <p><strong>Eventos:</strong> Realização de seminários e painéis com especialistas para discutir temas como o programa de incentivo ao talento, formação continuada, meio ambiente e sustentabilidade.</p>
+    <p><strong>Reconhecimento:</strong> Pelo quinto ano seguido, a marca foi eleita a mais lembrada em sistemas de ensino na pesquisa Estadão Marcas Mais.</p>
+    <p><strong>Legado e tradição:</strong> A celebração reforça o lema "Escola que fez escola", lembrando o impacto do Colégio Objetivo na vida de diversas gerações de alunos e famílias brasileiras.</p>
+    <p><strong>Expansão:</strong> O Grupo Objetivo se expandiu para se tornar uma instituição que oferece educação infantil, ensino fundamental e médio, e o curso pré-vestibular.</p>
+    <p><strong>História e evolução do Objetivo</strong></p>
+    <p><strong>1965:</strong> Fundação do Centro Educacional Objetivo, inicialmente como um curso pré-vestibular.</p>
+    <p><strong>Década de 1980:</strong> Expansão para a área de tecnologia e meio ambiente, com projetos como visitas a parques e expedições.</p>
+    <p><strong>Expansão nacional:</strong> Criação de um sistema de ensino que se espalhou pelo país e estabeleceu parcerias.</p>
+    <p><strong>Universidade:</strong> Criação da UNIP, que se tornou a universidade do grupo.</p>
+    <p><strong>Material didático:</strong> Criação da editora SOL, que produz material didático e é reconhecida por sua sustentabilidade.</p>
+  </footer>
+
+</body>
+</html>
